@@ -1,6 +1,9 @@
 #include "Vector3D.h"
 #include <iostream>
 using namespace std;
+Vector3D::Vector3D()
+{
+}
 Vector3D::Vector3D(double n)
 {
     x = y = z = n;

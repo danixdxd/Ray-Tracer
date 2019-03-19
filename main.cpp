@@ -1,67 +1,186 @@
+// #include <vector>
+
 // #include "Utilitarios.h"
-#include<iostream>
-#include "Vector3D.h"
-#include "Punto3D.h"
-using namespace std;
-int main() {
-   //Ejercicio 1
-    int c = 7;
-    Vector3D v_1 = Vector3D(6, 9, 6);
-    Vector3D vectorResultado = v_1 * c;
-    cout << "Ejercicio 1: ";
-    vectorResultado.mostrar();
+// #include <iostream>
+// #include "Vector3D.h"
+// #include "Punto3D.h"
+// #include "Esfera.h"
+// #include "ObjetoGeometrico.h"
+// #include "ViewPlane.h"
 
-    //Ejercicio 2
-    int n = 3;
-    Vector3D v2 = Vector3D(6, 6, 6);
-    vectorResultado = v2 / n;
-    cout << "Ejercicio 2: ";
-    vectorResultado.mostrar();
-
-    //Ejercicio 3
-    Vector3D a = Vector3D(1,1,1);
-    Vector3D b = Vector3D(2,3,4);
-    int constanteResultado = a * b;
-    cout << "Ejercicio 3: " << constanteResultado << endl;
-
-    //Ejercicio 4
-    Vector3D v1_4 = Vector3D(1,1,1);
-    Vector3D v2_4 = Vector3D(2,2,2);
-    vectorResultado = v1_4 + v2_4;
-    cout << "Ejercicio 4: ";
-    vectorResultado.mostrar();
-
-    //Ejercicio 5
-    vectorResultado = v1_4 - v2_4;
-    cout << "Ejercicio 5: ";
-    vectorResultado.mostrar();
+// using namespace std;
+// ColorRGB obtenerColorPixel(const Rayo& r, vector<ObjetoGeometrico*> objetos){
     
-    //Ejercicio 6
-    Punto3D A = Punto3D(1,2,3);
-    Vector3D v_6 = Vector3D(3,3,3);
-    Punto3D puntoResultado = A - v_6;
-    cout << "Ejercicio 6: ";
-    puntoResultado.mostrar();
+//     ColorRGB color;
 
-    //Ejercicio 7
-    Punto3D puntoA = Punto3D(5, 4, 3);
-    Punto3D puntoB = Punto3D(2, 2, 2);
-    Vector3D resultado = puntoA - puntoB;
-    cout << "Ejercicio 7: ";
-    resultado.mostrar();
+//     color.r = 0.0;
+//     color.g = 0.0;
+//     color.b = 0.0;
 
-    //Ejercicio 8
-    Vector3D v1_8 = Vector3D(1,1,1);
-    Vector3D v2_8 = Vector3D(2,3,4);   
-    vectorResultado = v1_8 ^ v2_8;
-    cout << "Ejercicio 8: ";
-    vectorResultado.mostrar();
+//     double t;
+//     double tmin = 2000000;              //Cualquier numero que sea sumamente grande
+//     Vector3D n;
+//     Punto3D q;
 
-    //Ejercicio 9
-    Punto3D p_9 = Punto3D(1,2,3);
-    Vector3D v1_9 = Vector3D(1,2,3);
-    puntoResultado = p_9 + v1_9;
-    cout << "Ejercicio 9: ";
-    puntoResultado.mostrar();
+//     Vector3D h;
+//     for(int i = 0; i < objetos.size(); i++) {
+//         if( objetos[i]->hayImpacto(r, t, n, q) && t < tmin){
+//             color.r = objetos[i]->obtenerColor().r;
+//             color.g = objetos[i]->obtenerColor().g;
+//             color.b = objetos[i]->obtenerColor().b;
+
+//             tmin = t;
+//         }
+//     }
+//     return color;
+// }
+// int main() {
+    
+//      // ESCENA------------------------------------------------------------------
+//     Punto3D centro1(0.0, 0.0, -400.0);
+//     double radio1 = 120;
+//     Esfera esfera1(centro1, radio1);   
+//     esfera1.establecerColor(0.30, 0.40, 1.0); // [0-]
+
+//     Punto3D centro2(150.0, 50.0, -200.0);
+//     double radio2 = 100;
+//     Esfera esfera2(centro2, radio2);   
+//     esfera2.establecerColor(0.80, 0.10, 0.05);
+
+
+//     vector<ObjetoGeometrico*> escena;
+//     escena.push_back(&esfera1);
+//     escena.push_back(&esfera2);
+    
+    
+//      // VIEWPLANE
+//     int hres = 800;
+//     int vres = 600;
+//     double s = 1.0;
+//     ViewPlane vp(hres, vres, s);
+    
+    
+//      // UTILITARIO PARA GUARDAR IMAGEN -------------------------------------------------------------------
+//     int dpi = 72;
+//     int width = vp.hres;
+//     int height = vp.vres;
+//     int n = width * height;
+//     ColorRGB* pixeles = new ColorRGB[n];    
+    
+//      // ALGORITMO
+//     for(int fil = 0; fil < vp.vres; fil++)
+//     {
+//         for ( int col = 0; col < vp.hres; col++) 
+//         {
+//              // Disparar un rayo
+//             Vector3D direccion(0.0, 0.0, -1.0);
+//             double x = vp.s * ( col - vp.hres/2 + 0.5 );
+//             double y = vp.s * ( fil - vp.vres/2 + 0.5 );
+//             double z = 0;
+//             Punto3D origen(x, y, z);
+//             Rayo rayo(origen, direccion);
+
+//             pixeles[fil*width+col].r = obtenerColorPixel(rayo, escena).r;
+//             pixeles[fil*width+col].g = obtenerColorPixel(rayo, escena).g;
+//             pixeles[fil*width+col].b = obtenerColorPixel(rayo, escena).b;
+//         }
+//     }    
+//     savebmp("img.bmp", width, height, dpi, pixeles);
+//     return 0; 
+
+// }
+
+#include <vector>
+#include <iostream>
+
+#include "Vector3D.h"
+#include "Esfera.h"
+#include "ViewPlane.h"
+
+#include "Utilitarios.h"
+
+using namespace std;
+
+
+ColorRGB obtenerColorPixel(const Rayo& r, vector<ObjetoGeometrico*> objetos){
+    
+    ColorRGB color;
+
+    color.r = 0.0;
+    color.g = 0.0;
+    color.b = 0.0;
+
+    double t;
+    double tmin = 2000000;    
+    Vector3D n;
+    Punto3D q;
+
+    Vector3D h;
+    for(int i = 0; i < objetos.size(); i++) {
+        if( objetos[i]->hayImpacto(r, t, n, q) && t < tmin){
+            color.r = objetos[i]->obtenerColor().r;
+            color.g = objetos[i]->obtenerColor().g;
+            color.b = objetos[i]->obtenerColor().b;
+
+            tmin = t;
+        }
+    }
+    return color;
+}
+
+
+int main() {
+
+     // ESCENA------------------------------------------------------------------
+    Punto3D centro1(0.0, 0.0, -400.0);
+    double radio1 = 120;
+    Esfera esfera1(centro1, radio1);   
+    esfera1.establecerColor(0.30, 0.40, 1.0); // [0-]
+
+    Punto3D centro2(150.0, 50.0, -200.0);
+    double radio2 = 100;
+    Esfera esfera2(centro2, radio2);   
+    esfera2.establecerColor(0.80, 0.10, 0.05);
+
+
+    vector<ObjetoGeometrico*> escena;
+    escena.push_back(&esfera1);
+    escena.push_back(&esfera2);
+    
+    
+     // VIEWPLANE
+    int hres = 800;
+    int vres = 600;
+    double s = 1.0;
+    ViewPlane vp(hres, vres, s);
+    
+    
+     // UTILITARIO PARA GUARDAR IMAGEN -------------------------------------------------------------------
+    int dpi = 72;
+    int width = vp.hres;
+    int height = vp.vres;
+    int n = width * height;
+    ColorRGB* pixeles = new ColorRGB[n];
+    
+    
+     // ALGORITMO
+    for(int fil = 0; fil < vp.vres; fil++)
+    {
+        for ( int col = 0; col < vp.hres; col++) 
+        {
+             // Disparar un rayo
+            Vector3D direccion(0.0, 0.0, -1.0);
+            double x = vp.s * ( col - vp.hres/2 + 0.5 );
+            double y = vp.s * ( fil - vp.vres/2 + 0.5 );
+            double z = 0;
+            Punto3D origen(x, y, z);
+            Rayo rayo(origen, direccion);
+
+            pixeles[fil*width+col].r = obtenerColorPixel(rayo, escena).r;
+            pixeles[fil*width+col].g = obtenerColorPixel(rayo, escena).g;
+            pixeles[fil*width+col].b = obtenerColorPixel(rayo, escena).b;
+        }
+    }    
+    savebmp("img.bmp", width, height, dpi, pixeles);
     return 0;
 }
