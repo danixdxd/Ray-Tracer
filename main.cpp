@@ -95,6 +95,8 @@
 
 #include "Vector3D.h"
 #include "Esfera.h"
+#include "Plano.h"
+#include "Triangulo.h"
 #include "ViewPlane.h"
 
 #include "Utilitarios.h"
@@ -142,11 +144,26 @@ int main() {
     Esfera esfera2(centro2, radio2);   
     esfera2.establecerColor(0.80, 0.10, 0.05);
 
+    Punto3D p(0, -209, 0);
+    Vector3D q(0.0, -1.0, 0);
+    Plano plano(p, q.hat());
+    plano.establecerColor(0.0, 0.0, 0.0);
+
+    Punto3D A(-360,-100,-600);
+    Punto3D B(-140,0,-300);
+    Punto3D C(-70,-220, -400);
+    Triangulo triangulo(A, B, C);
+    triangulo.establecerColor(0,1.0,0.0);
+
+
+
+
 
     vector<ObjetoGeometrico*> escena;
     escena.push_back(&esfera1);
     escena.push_back(&esfera2);
-    
+    escena.push_back(&plano);
+    escena.push_back(&triangulo);
     
      // VIEWPLANE
     int hres = 800;

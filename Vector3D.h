@@ -15,6 +15,8 @@ class Vector3D
     double operator* (const Vector3D& v) const;
     friend Vector3D operator* (double n, const Vector3D& v); 
     void mostrar();
+    Vector3D& hat();							             // Convertir el vector a un vector unitario y retornar el vector
+
     public:
     double x, y, z;
 };

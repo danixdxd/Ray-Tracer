@@ -1,5 +1,6 @@
 #include "Vector3D.h"
 #include <iostream>
+#include <math.h>
 using namespace std;
 Vector3D::Vector3D()
 {
@@ -50,4 +51,10 @@ Vector3D operator* (double n, const Vector3D& v){
 void Vector3D::mostrar()
 {
     cout<<"< "<<x << ", "<< y << ", " << z << " >" << endl;
+}
+
+Vector3D& Vector3D::hat(void) {
+	double length = sqrt(x * x + y * y + z * z);
+	x /= length; y /= length; z /= length;
+	return (*this);
 }
