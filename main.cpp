@@ -139,10 +139,10 @@ int main() {
     Esfera esfera1(centro1, radio1);   
     esfera1.establecerColor(0.30, 0.40, 1.0); // [0-]
 
-    Punto3D centro2(150.0, 50.0, -200.0);
+    Punto3D centro2(0.0, 0.0, -200.0);
     double radio2 = 100;
     Esfera esfera2(centro2, radio2);   
-    esfera2.establecerColor(0.80, 0.10, 0.05);
+    esfera2.establecerColor(0.0, 0.0, 0.0);
 
     Punto3D p(0, -209, 0);
     Vector3D q(0.0, -1.0, 0);
@@ -155,15 +155,40 @@ int main() {
     Triangulo triangulo(A, B, C);
     triangulo.establecerColor(0,1.0,0.0);
 
+    Punto3D A1(10,0,-100);
+    Punto3D B1(10,120,-100);
+    Punto3D C1(100,-70, -100);
+    Triangulo triangulo1(A1, B1, C1);
+    triangulo1.establecerColor(0,0,0.0);
 
+    Punto3D A2(-10,0,-100);
+    Punto3D B2(-10,120,-100);
+    Punto3D C2(-100,-70, -100);
+    Triangulo triangulo2(A2, B2, C2);
+    triangulo2.establecerColor(0,0,0.0);
 
+    Punto3D A3(10,-120, -100);
+    Punto3D B3(10,-20,-100);
+    Punto3D C3(90,-80,-100);
+    Triangulo triangulo3(A3, B3, C3);
+    triangulo3.establecerColor(0,0,0.0);
 
+    Punto3D A4(-10,-120, -100);
+    Punto3D B4(-10,-20,-100);
+    Punto3D C4(-90,-80,-100);
+    Triangulo triangulo4(A4, B4, C4);
+    triangulo4.establecerColor(0,0,0.0);
 
     vector<ObjetoGeometrico*> escena;
     escena.push_back(&esfera1);
-    escena.push_back(&esfera2);
+    //escena.push_back(&esfera2);
     escena.push_back(&plano);
-    escena.push_back(&triangulo);
+    //escena.push_back(&triangulo);
+    escena.push_back(&triangulo1);
+    escena.push_back(&triangulo2);
+    escena.push_back(&triangulo3);
+    escena.push_back(&triangulo4);
+    
     
      // VIEWPLANE
     int hres = 800;
