@@ -1,5 +1,5 @@
 #include "Triangulo.h"
-#include<iostream>
+#include <iostream>
 using namespace std;
 Triangulo::Triangulo(Punto3D a, Punto3D b, Punto3D c)
 {

@@ -134,6 +134,7 @@ ColorRGB obtenerColorPixel(const Rayo& r, vector<ObjetoGeometrico*> objetos){
 int main() {
 
      // ESCENA------------------------------------------------------------------
+     //Simbolo de paz
     Punto3D centro1(0.0, 0.0, -400.0);
     double radio1 = 120;
     Esfera esfera1(centro1, radio1);   
@@ -179,6 +180,36 @@ int main() {
     Triangulo triangulo4(A4, B4, C4);
     triangulo4.establecerColor(0,0,0.0);
 
+    //Sol
+    Punto3D centro_sol(-240.0, 190.0, -400.0);
+    double radio_sol = 30;
+    Esfera esfera_sol(centro_sol, radio_sol);   
+    esfera_sol.establecerColor(1.0, 1.0, 0.20);
+
+    
+    Punto3D A_trianguloUno_sol(-280, 195, -100);
+    Punto3D B_trianguloUno_sol(-280, 185, -100);
+    Punto3D C_trianguloUno_sol(-290, 190, -100);
+    Triangulo trianguloUno_sol(A_trianguloUno_sol, B_trianguloUno_sol, C_trianguloUno_sol);
+    trianguloUno_sol.establecerColor(1.0,1.0,0.20);
+
+    Punto3D A_trianguloDos_sol(-200, 195, -100);
+    Punto3D B_trianguloDos_sol(-200, 185, -100);
+    Punto3D C_trianguloDos_sol(-190, 190, -100);
+    Triangulo trianguloDos_sol(A_trianguloDos_sol, B_trianguloDos_sol, C_trianguloDos_sol);
+    trianguloDos_sol.establecerColor(1.0,1.0,0.20);
+
+    Punto3D A_trianguloTres_sol(-235, 230, -100);
+    Punto3D B_trianguloTres_sol(-245, 230, -100);
+    Punto3D C_trianguloTres_sol(-240, 240, -100);
+    Triangulo trianguloTres_sol(A_trianguloTres_sol, B_trianguloTres_sol, C_trianguloTres_sol);
+    trianguloTres_sol.establecerColor(1.0,1.0,0.20);
+    
+    Punto3D A_trianguloCuatro_sol(-235, 150, -100);
+    Punto3D B_trianguloCuatro_sol(-245, 150, -100);
+    Punto3D C_trianguloCuatro_sol(-240, 140, -100);
+    Triangulo trianguloCuatro_sol(A_trianguloCuatro_sol, B_trianguloCuatro_sol, C_trianguloCuatro_sol);
+    trianguloCuatro_sol.establecerColor(1.0,1.0,0.20);
     vector<ObjetoGeometrico*> escena;
     escena.push_back(&esfera1);
     //escena.push_back(&esfera2);
@@ -188,8 +219,13 @@ int main() {
     escena.push_back(&triangulo2);
     escena.push_back(&triangulo3);
     escena.push_back(&triangulo4);
-    
-    
+
+    //Sol
+    escena.push_back(&esfera_sol);    
+    escena.push_back(&trianguloUno_sol); 
+    escena.push_back(&trianguloDos_sol); 
+    escena.push_back(&trianguloTres_sol); 
+    escena.push_back(&trianguloCuatro_sol);    
      // VIEWPLANE
     int hres = 800;
     int vres = 600;
