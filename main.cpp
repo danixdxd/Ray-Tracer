@@ -1,95 +1,3 @@
-// #include <vector>
-
-// #include "Utilitarios.h"
-// #include <iostream>
-// #include "Vector3D.h"
-// #include "Punto3D.h"
-// #include "Esfera.h"
-// #include "ObjetoGeometrico.h"
-// #include "ViewPlane.h"
-
-// using namespace std;
-// ColorRGB obtenerColorPixel(const Rayo& r, vector<ObjetoGeometrico*> objetos){
-    
-//     ColorRGB color;
-
-//     color.r = 0.0;
-//     color.g = 0.0;
-//     color.b = 0.0;
-
-//     double t;
-//     double tmin = 2000000;              //Cualquier numero que sea sumamente grande
-//     Vector3D n;
-//     Punto3D q;
-
-//     Vector3D h;
-//     for(int i = 0; i < objetos.size(); i++) {
-//         if( objetos[i]->hayImpacto(r, t, n, q) && t < tmin){
-//             color.r = objetos[i]->obtenerColor().r;
-//             color.g = objetos[i]->obtenerColor().g;
-//             color.b = objetos[i]->obtenerColor().b;
-
-//             tmin = t;
-//         }
-//     }
-//     return color;
-// }
-// int main() {
-    
-//      // ESCENA------------------------------------------------------------------
-//     Punto3D centro1(0.0, 0.0, -400.0);
-//     double radio1 = 120;
-//     Esfera esfera1(centro1, radio1);   
-//     esfera1.establecerColor(0.30, 0.40, 1.0); // [0-]
-
-//     Punto3D centro2(150.0, 50.0, -200.0);
-//     double radio2 = 100;
-//     Esfera esfera2(centro2, radio2);   
-//     esfera2.establecerColor(0.80, 0.10, 0.05);
-
-
-//     vector<ObjetoGeometrico*> escena;
-//     escena.push_back(&esfera1);
-//     escena.push_back(&esfera2);
-    
-    
-//      // VIEWPLANE
-//     int hres = 800;
-//     int vres = 600;
-//     double s = 1.0;
-//     ViewPlane vp(hres, vres, s);
-    
-    
-//      // UTILITARIO PARA GUARDAR IMAGEN -------------------------------------------------------------------
-//     int dpi = 72;
-//     int width = vp.hres;
-//     int height = vp.vres;
-//     int n = width * height;
-//     ColorRGB* pixeles = new ColorRGB[n];    
-    
-//      // ALGORITMO
-//     for(int fil = 0; fil < vp.vres; fil++)
-//     {
-//         for ( int col = 0; col < vp.hres; col++) 
-//         {
-//              // Disparar un rayo
-//             Vector3D direccion(0.0, 0.0, -1.0);
-//             double x = vp.s * ( col - vp.hres/2 + 0.5 );
-//             double y = vp.s * ( fil - vp.vres/2 + 0.5 );
-//             double z = 0;
-//             Punto3D origen(x, y, z);
-//             Rayo rayo(origen, direccion);
-
-//             pixeles[fil*width+col].r = obtenerColorPixel(rayo, escena).r;
-//             pixeles[fil*width+col].g = obtenerColorPixel(rayo, escena).g;
-//             pixeles[fil*width+col].b = obtenerColorPixel(rayo, escena).b;
-//         }
-//     }    
-//     savebmp("img.bmp", width, height, dpi, pixeles);
-//     return 0; 
-
-// }
-
 #include <vector>
 #include <iostream>
 
@@ -134,13 +42,13 @@ ColorRGB obtenerColorPixel(const Rayo& r, vector<ObjetoGeometrico*> objetos){
 int main() {
 
      // ESCENA------------------------------------------------------------------
-     //Simbolo de paz
+    //Simbolo de paz circulos
     Punto3D centro1(0.0, 0.0, -400.0);
-    double radio1 = 120;
+    double radio1 = 122;
     Esfera esfera1(centro1, radio1);   
     esfera1.establecerColor(0.30, 0.40, 1.0); // [0-]
 
-    Punto3D centro2(0.0, 0.0, -200.0);
+    Punto3D centro2(0.0, 0.0, -300.0);
     double radio2 = 100;
     Esfera esfera2(centro2, radio2);   
     esfera2.establecerColor(0.0, 0.0, 0.0);
@@ -150,35 +58,43 @@ int main() {
     Plano plano(p, q.hat());
     plano.establecerColor(0.0, 0.0, 0.0);
 
-    Punto3D A(-360,-100,-600);
-    Punto3D B(-140,0,-300);
-    Punto3D C(-70,-220, -400);
-    Triangulo triangulo(A, B, C);
-    triangulo.establecerColor(0,1.0,0.0);
+    //Lineas del centro del simbolo
+    Punto3D A_centro1(-10,110, -100);
+    Punto3D B_centro1(10,110,-100);
+    Punto3D C_centro1(10,-110,-100);
+    Triangulo triangulo__centro1(A_centro1, B_centro1, C_centro1);
+    triangulo__centro1.establecerColor(0.30, 0.40, 1.0);
 
-    Punto3D A1(10,0,-100);
-    Punto3D B1(10,120,-100);
-    Punto3D C1(100,-70, -100);
-    Triangulo triangulo1(A1, B1, C1);
-    triangulo1.establecerColor(0,0,0.0);
+    Punto3D A_centro2(-10,-110, -100);
+    Punto3D B_centro2(-10,110,-100);
+    Punto3D C_centro2(10,-110,-100);
+    Triangulo triangulo__centro2(A_centro2, B_centro2, C_centro2);
+    triangulo__centro2.establecerColor(0.30, 0.40, 1.0);
 
-    Punto3D A2(-10,0,-100);
-    Punto3D B2(-10,120,-100);
-    Punto3D C2(-100,-70, -100);
-    Triangulo triangulo2(A2, B2, C2);
-    triangulo2.establecerColor(0,0,0.0);
+    Punto3D A_izquierdo1(-10,0, -100);
+    Punto3D B_izquierdo1(-10,-20,-100);
+    Punto3D C_izquierdo1(-90,-80,-100);
+    Triangulo triangulo__izquierdo1(A_izquierdo1, B_izquierdo1, C_izquierdo1);
+    triangulo__izquierdo1.establecerColor(0.30, 0.40, 1.0);
 
-    Punto3D A3(10,-120, -100);
-    Punto3D B3(10,-20,-100);
-    Punto3D C3(90,-80,-100);
-    Triangulo triangulo3(A3, B3, C3);
-    triangulo3.establecerColor(0,0,0.0);
+    Punto3D A_izquierdo2(-10,0, -100);
+    Punto3D B_izquierdo2(-90,-80,-100);
+    Punto3D C_izquierdo2(-100,-70, -100);
+    Triangulo triangulo__izquierdo2(A_izquierdo2, B_izquierdo2, C_izquierdo2);
+    triangulo__izquierdo2.establecerColor(0.30, 0.40, 1.0);
 
-    Punto3D A4(-10,-120, -100);
-    Punto3D B4(-10,-20,-100);
-    Punto3D C4(-90,-80,-100);
-    Triangulo triangulo4(A4, B4, C4);
-    triangulo4.establecerColor(0,0,0.0);
+    Punto3D A_derecho1(10,0, -100);
+    Punto3D B_derecho1(10,-20,-100);
+    Punto3D C_derecho1(90,-80,-100);
+    Triangulo triangulo__derecho1(A_derecho1, B_derecho1, C_derecho1);
+    triangulo__derecho1.establecerColor(0.30, 0.40, 1.0);
+
+    Punto3D A_derecho2(10,-0, -100);
+    Punto3D B_derecho2(90,-80,-100);
+    Punto3D C_derecho2(100,-70, -100);
+    Triangulo triangulo__derecho2(A_derecho2, B_derecho2, C_derecho2);
+    triangulo__derecho2.establecerColor(0.30, 0.40, 1.0);
+
 
     //Sol
     Punto3D centro_sol(-240.0, 190.0, -400.0);
@@ -212,13 +128,16 @@ int main() {
     trianguloCuatro_sol.establecerColor(1.0,1.0,0.20);
     vector<ObjetoGeometrico*> escena;
     escena.push_back(&esfera1);
-    //escena.push_back(&esfera2);
+    escena.push_back(&esfera2);
     escena.push_back(&plano);
-    //escena.push_back(&triangulo);
-    escena.push_back(&triangulo1);
-    escena.push_back(&triangulo2);
-    escena.push_back(&triangulo3);
-    escena.push_back(&triangulo4);
+
+    //lineas del simbolo
+    escena.push_back(&triangulo__centro1);
+    escena.push_back(&triangulo__centro2);
+    escena.push_back(&triangulo__izquierdo1);
+    escena.push_back(&triangulo__izquierdo2);
+    escena.push_back(&triangulo__derecho1);
+    escena.push_back(&triangulo__derecho2);
 
     //Sol
     escena.push_back(&esfera_sol);    
@@ -226,7 +145,10 @@ int main() {
     escena.push_back(&trianguloDos_sol); 
     escena.push_back(&trianguloTres_sol); 
     escena.push_back(&trianguloCuatro_sol);    
-     // VIEWPLANE
+
+
+  
+   // VIEWPLANE
     int hres = 800;
     int vres = 600;
     double s = 1.0;
