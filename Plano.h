@@ -2,6 +2,9 @@
 #define PLANO_H
 #include "ObjetoGeometrico.h"
 #include "ColorRGB.h"
+#include <iostream>
+using namespace std;
+
 class Plano : public ObjetoGeometrico
 {
     public:
@@ -13,5 +16,9 @@ class Plano : public ObjetoGeometrico
     Punto3D p;
     Vector3D n;
     ColorRGB color;
+    double limSup;
+    double limInf;
+    double limIzq;
+    double limDer ;
 };
 #endif

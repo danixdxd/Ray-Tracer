@@ -3,3 +3,12 @@ g++ -o ray main.cpp Utilitarios.cpp Esfera.cpp ObjetoGeometrico.cpp Plano.cpp Pu
 mspaint.exe img.bmp
 
 
+g++ -o ray Principal.cpp Utilitarios.cpp Esfera.cpp ObjetoGeometrico.cpp Plano.cpp Punto3D.cpp Rayo.cpp Vector3D.cpp ViewPlane.cpp Triangulo.cpp
+./ray.exe
+mspaint.exe imagen.bmp
+
+
+g++ -o ray bicho.cpp Utilitarios.cpp Esfera.cpp ObjetoGeometrico.cpp Plano.cpp Punto3D.cpp Rayo.cpp Vector3D.cpp ViewPlane.cpp Triangulo.cpp
+./ray.exe
+mspaint.exe bicho.bmp
+
