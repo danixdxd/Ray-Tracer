@@ -627,9 +627,169 @@ int main()
     Punto3D B_9F(10 * 4.75927400588989,10 * -11.7055788040161,10 * 18.0139141082764);
     Punto3D C_9F(10 * 5.69317770004272,10 * -12.3288507461548,10 * 19.9418258666992);   
 
+    //Parte de Daniel 150 - 177
 
+    Punto3D A_150(10 * 19.2583446502686,10 * -0.395822167396545,10 * 12.3854598999023);
+    Punto3D B_150(10 * 14.8251876831055,10 * -5.64533853530884,10 * 8.68273639678955);
+    Punto3D C_150(10 * 16.1598339080811,10 * -8.13070678710938,10 * 12.9777183532715);   
 
+    Punto3D A_151(10 * 16.1598339080811,10 * -8.13070678710938,10 * 12.9777183532715);
+    Punto3D B_151(10 * 18.2360210418701,10 * -9.4094295501709,10 * 16.1571235656738);
+    Punto3D C_151(10 * 19.2583446502686,10 * -0.395822167396545,10 * 12.3854598999023);
 
+    Punto3D A_152(10 * 11.1352014541626,10 * -11.0715780258179,10 * 13.951210975647);
+    Punto3D B_152(10 * 18.2360210418701,10 * -9.4094295501709,10 * 16.1571235656738);
+    Punto3D C_152(10 * 16.1598339080811,10 * -8.13070678710938,10 * 12.9777183532715);
+
+    Punto3D A_153(10 * 16.1598339080811,10 * -8.13070678710938,10 * 12.9777183532715);
+    Punto3D B_153(10 * 7.67125844955444,10 * -10.4790353775024,10 * 10.8653936386108);
+    Punto3D C_153(10 * 11.1352014541626,10 * -11.0715780258179,10 * 13.951210975647);
+
+    Punto3D A_154(10 * 10.9669961929321,10 * -6.5931658744812,10 * 7.4106559753418);
+    Punto3D B_154(10 * 7.67125844955444,10 * -7.29277896881104,10 * 7.55650949478149);
+    Punto3D C_154(10 * 7.67125844955444,10 * -10.4790353775024,10 * 10.8653936386108);
+
+    Punto3D A_155(10 * 10.9669961929321,10 * -6.5931658744812,10 * 7.4106559753418);
+    Punto3D B_155(10 * 11.2274894714355,10 * -4.67934083938599,10 * 5.37508583068848);
+    Punto3D C_155(10 * 7.67125844955444,10 * -7.29277896881104,10 * 7.55650949478149);
+
+    Punto3D A_156(10 * 11.0864858627319,10 * -11.631254196167,10 * 20.2985610961914);
+    Punto3D B_156(10 * 9.64933967590332,10 * -12.3288507461548,10 * 19.9418258666992);
+    Punto3D C_156(10 * 7.67125844955444,10 * -13.8427953720093,10 * 26.5246868133545);
+
+    Punto3D A_157(10 * 9.64933967590332,10 * -12.3288507461548,10 * 19.9418258666992);
+    Punto3D B_157(10 * 10.5832443237305,10 * -11.7055788040161,10 * 18.0139141082764);
+    Punto3D C_157(10 * 9.86263179779053,10 * -11.9431524276733,10 * 16.4089984893799);
+
+    Punto3D A_158(10 * 9.86263179779053,10 * -11.9431524276733,10 * 16.4089984893799);
+    Punto3D B_158(10 * 7.67125844955444,10 * -13.8427953720093,10 * 26.5246868133545);
+    Punto3D C_158(10 * 9.64933967590332,10 * -12.3288507461548,10 * 19.9418258666992);
+
+    Punto3D A_159(10 * 11.1352014541626,10 * -11.0715780258179,10 * 13.951210975647);
+    Punto3D B_159(10 * 7.67125844955444,10 * -12.8113794326782,10 * 14.8463802337646);
+    Punto3D C_159(10 * 9.86263179779053,10 * -11.9431524276733,10 * 16.4089984893799);  
+    
+    Punto3D A_15A(10 * 9.86263179779053,10 * -11.9431524276733,10 * 16.4089984893799);
+    Punto3D B_15A(10 * 11.1908330917358,10 * -11.2280836105347,10 * 15.8446559906006);
+    Punto3D C_15A(10 * 11.1352014541626,10 * -11.0715780258179,10 * 13.951210975647); 
+
+    Punto3D A_15B(10 * 9.86263179779053,10 * -11.9431524276733,10 * 16.4089984893799);
+    Punto3D B_15B(10 * 7.67125844955444,10 * -12.8113794326782,10 * 14.8463802337646);
+    Punto3D C_15B(10 * 7.67125844955444,10 * -13.8427953720093,10 * 26.5246868133545); 
+
+    Punto3D A_15C(10 * 7.67125844955444,10 * -10.4790353775024,10 * 10.8653936386108);
+    Punto3D B_15C(10 * 16.1598339080811,10 * -8.13070678710938,10 * 12.9777183532715);
+    Punto3D C_15C(10 * 14.8251876831055,10 * -5.64533853530884,10 * 8.68273639678955);
+
+    Punto3D A_15D(10 * 14.8251876831055,10 * -5.64533853530884,10 * 8.68273639678955);
+    Punto3D B_15D(10 * 10.9669961929321,10 * -6.5931658744812,10 * 7.4106559753418);
+    Punto3D C_15D(10 * 7.67125844955444,10 * -10.4790353775024,10 * 10.8653936386108);
+
+    Punto3D A_15E(10 * 7.67125844955444,10 * -10.4790353775024,10 * 10.8653936386108);
+    Punto3D B_15E(10 * 7.67125844955444,10 * -12.8113794326782,10 * 14.8463802337646);
+    Punto3D C_15E(10 * 11.1352014541626,10 * -11.0715780258179,10 * 13.951210975647);
+
+    Punto3D A_15F(10 * 16.4592208862305,10 * -16.0378971099854,10 * 33.8951568603516);
+    Punto3D B_15F(10 * 7.67125844955444,10 * -19.7361106872559,10 * 31.3227367401123);
+    Punto3D C_15F(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+
+    Punto3D A_160(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+    Punto3D B_160(10 * 14.3063316345215,10 * -16.6072292327881,10 * 35.2938766479492);
+    Punto3D C_160(10 * 16.4592208862305,10 * -16.0378971099854,10 * 33.8951568603516);
+
+    Punto3D A_161(10 * 16.7048950195313,10 * -14.4417476654053,10 * 42.9448699951172);
+    Punto3D B_161(10 * 15.1549625396729,10 * -15.2815380096436,10 * 41.3636322021484);
+    Punto3D C_161(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+
+    Punto3D A_162(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+    Punto3D B_162(10 * 7.67125844955444,10 * -17.4182453155518,10 * 45.25830078125);
+    Punto3D C_162(10 * 16.7048950195313,10 * -14.4417476654053,10 * 42.9448699951172);
+
+    Punto3D A_163(10 * 15.1549625396729,10 * -15.2815380096436,10 * 41.3636322021484);
+    Punto3D B_163(10 * 16.7048950195313,10 * -14.4417476654053,10 * 42.9448699951172);
+    Punto3D C_163(10 * 16.4592208862305,10 * -16.0378971099854,10 * 33.8951568603516);
+
+    Punto3D A_164(10 * 16.4592208862305,10 * -16.0378971099854,10 * 33.8951568603516);
+    Punto3D B_164(10 * 14.3063316345215,10 * -16.6072292327881,10 * 35.2938766479492);
+    Punto3D C_164(10 * 15.1549625396729,10 * -15.2815380096436,10 * 41.3636322021484);
+
+    Punto3D A_165(10 * 7.67125844955444,10 * -17.4182453155518,10 * 45.25830078125);
+    Punto3D B_165(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+    Punto3D C_165(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+
+    Punto3D A_166(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+    Punto3D B_166(10 * 7.67125844955444,10 * -19.7361106872559,10 * 31.3227367401123);
+    Punto3D C_166(10 * 7.67125844955444,10 * -17.4182453155518,10 * 45.25830078125); 
+
+    Punto3D A_167(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+    Punto3D B_167(10 * 12.1804609298706,10 * -14.0271501541138,10 * 35.8818588256836);
+    Punto3D C_167(10 * 13.5048904418945,10 * -14.4921655654907,10 * 35.9002227783203);
+
+    Punto3D A_168(10 * 13.5048904418945,10 * -14.4921655654907,10 * 35.9002227783203);
+    Punto3D B_168(10 * 14.3063316345215,10 * -16.6072292327881,10 * 35.2938766479492);
+    Punto3D C_168(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+
+    Punto3D A_169(10 * 14.3063316345215,10 * -16.6072292327881,10 * 35.2938766479492);
+    Punto3D B_169(10 * 13.5048904418945,10 * -14.4921655654907,10 * 35.9002227783203);
+    Punto3D C_169(10 * 15.1549625396729,10 * -15.2815380096436,10 * 41.3636322021484);
+
+    Punto3D A_16A(10 * 15.1549625396729,10 * -15.2815380096436,10 * 41.3636322021484);
+    Punto3D B_16A(10 * 12.9510898590088,10 * -15.7644462585449,10 * 40.1608238220215);
+    Punto3D C_16A(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+
+    Punto3D A_16B(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+    Punto3D B_16B(10 * 12.9510898590088,10 * -15.7644462585449,10 * 40.1608238220215);
+    Punto3D C_16B(10 * 12.1804609298706,10 * -14.0271501541138,10 * 35.8818588256836);
+
+    Punto3D A_16C(10 * 12.1804609298706,10 * -14.0271501541138,10 * 35.8818588256836);
+    Punto3D B_16C(10 * 11.5812292098999,10 * -17.6368560791016,10 * 35.1995887756348);
+    Punto3D C_16C(10 * 11.897985458374,10 * -16.589864730835,10 * 40.7836875915527);
+
+    Punto3D A_16D(10 * 7.67125844955444,10 * -13.8427953720093,10 * 26.5246868133545);
+    Punto3D B_16D(10 * 14.8814191818237,10 * -10.3990201950073,10 * 28.7177238464355);
+    Punto3D C_16D(10 * 12.7803354263306,10 * -10.9184398651123,10 * 22.1091346740723);
+
+    Punto3D A_16E(10 * 12.7803354263306,10 * -10.9184398651123,10 * 22.1091346740723);
+    Punto3D B_16E(10 * 11.0864858627319,10 * -11.631254196167,10 * 20.2985610961914);
+    Punto3D C_16E(10 * 7.67125844955444,10 * -13.8427953720093,10 * 26.5246868133545);
+
+    Punto3D A_16F(10 * 8.72710704803467,10 * 22.3188991546631,10 * -4.27007165626492E-7);
+    Punto3D B_16F(10 * 7.67125844955444,10 * 22.3189010620117,10 * -4.27007165626492E-7);
+    Punto3D C_16F(10 * 7.67125844955444,10 * 16.9343338012695,10 * -4.27007165626492E-7);
+
+    Punto3D A_170(10 * 8.72710704803467,10 * 22.3188991546631,10 * -4.27007165626492E-7);
+    Punto3D B_170(10 * 7.67125844955444,10 * 28.2799396514893,10 * 9.34003925323486);
+    Punto3D C_170(10 * 7.67125844955444,10 * 22.3189010620117,10 * -4.27007165626492E-7);
+
+    Punto3D A_171(10 * 11.2274894714355,10 * -4.67934083938599,10 * 5.37508583068848);
+    Punto3D B_171(10 * 7.67125844955444,10 * -1.64701318740845,10 * 1.61039781570435);
+    Punto3D C_171(10 * 7.67125844955444,10 * -7.29277896881104,10 * 7.55650949478149);
+
+    Punto3D A_172(10 * 18.8528079986572,10 * -6.89483404159546,10 * 36.3160095214844);
+    Punto3D B_172(10 * 17.5466861724854,10 * -4.17985439300537,10 * 32.6183853149414);
+    Punto3D C_172(10 * 16.4592208862305,10 * -16.0378971099854,10 * 33.8951568603516);
+
+    Punto3D A_173(10 * 14.4320449829102,10 * -0.071529358625412,10 * 38.3585395812988);
+    Punto3D B_173(10 * 17.5466861724854,10 * -4.17985439300537,10 * 32.6183853149414);
+    Punto3D C_173(10 * 18.8528079986572,10 * -6.89483404159546,10 * 36.3160095214844);
+
+    Punto3D A_174(10 * 16.076717376709,10 * 3.20553731918335,10 * 6.31084251403809);
+    Punto3D B_174(10 * 14.5557041168213,10 * 3.38750171661377,10 * 1.26213490962982);
+    Punto3D C_174(10 * 19.5473709106445,10 * 1.63319611549377,10 * 1.63109004497528);
+
+    Punto3D A_175(10 * 11.0147504806519,10 * 2.07285118103027,10 * 4.34882831573486);
+    Punto3D B_175(10 * 14.5557041168213,10 * 3.38750171661377,10 * 1.26213490962982);
+    Punto3D C_175(10 * 16.076717376709,10 * 3.20553731918335,10 * 6.31084251403809);
+
+    Punto3D A_176(10 * 17.0410480499268,10 * -6.04895067214966,10 * -4.27007165626492E-7);
+    Punto3D B_176(10 * 16.5175666809082,10 * -5.87052297592163,10 * 2.15543818473816);
+    Punto3D C_176(10 * 19.6093692779541,10 * -6.29674005508423,10 * -4.27007165626492E-7);
+
+    Punto3D A_177(10 * 20.1096668243408,10 * -3.21641826629639,10 * 1.80845320224762);
+    Punto3D B_177(10 * 19.6093692779541,10 * -6.29674005508423,10 * -4.27007165626492E-7);
+    Punto3D C_177(10 * 16.5175666809082,10 * -5.87052297592163,10 * 2.15543818473816);
+    
+     
 
 
     Triangulo trianguloA(A_A, B_A, C_A);
@@ -836,7 +996,7 @@ int main()
     Triangulo triangulo6D(A_6D, B_6D, C_6D);
     triangulo6D.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo6E(A_6E, B_6E, C_6E);
-    triangulo5E.establecerColor(0.5, 0.3, 0.3);
+    triangulo6E.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo6F(A_6F, B_6F, C_6F);
     triangulo6F.establecerColor(0.5, 0.3, 0.3);
 
@@ -869,7 +1029,7 @@ int main()
     Triangulo triangulo7D(A_7D, B_7D, C_7D);
     triangulo7D.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo7E(A_7E, B_7E, C_7E);
-    triangulo5E.establecerColor(0.5, 0.3, 0.3);
+    triangulo7E.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo7F(A_7F, B_7F, C_7F);
     triangulo7F.establecerColor(0.5, 0.3, 0.3);
 
@@ -902,7 +1062,7 @@ int main()
     Triangulo triangulo8D(A_8D, B_8D, C_8D);
     triangulo8D.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo8E(A_8E, B_8E, C_8E);
-    triangulo5E.establecerColor(0.5, 0.3, 0.3);
+    triangulo8E.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo8F(A_8F, B_8F, C_8F);
     triangulo8F.establecerColor(0.5, 0.3, 0.3);
 
@@ -935,11 +1095,94 @@ int main()
     Triangulo triangulo9D(A_9D, B_9D, C_9D);
     triangulo9D.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo9E(A_9E, B_9E, C_9E);
-    triangulo5E.establecerColor(0.5, 0.3, 0.3);
+    triangulo8E.establecerColor(0.5, 0.3, 0.3);
     Triangulo triangulo9F(A_9F, B_9F, C_9F);
     triangulo9F.establecerColor(0.5, 0.3, 0.3);
 
+    //Parte de Daniel 150 - 177
+    Triangulo triangulo150(A_150, B_150, C_150);
+    triangulo150.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo151(A_151, B_151, C_151);
+    triangulo151.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo152(A_152, B_152, C_152);
+    triangulo152.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo153(A_153, B_153, C_153);
+    triangulo153.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo154(A_154, B_154, C_154);
+    triangulo154.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo155(A_155, B_155, C_155);
+    triangulo155.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo156(A_156, B_156, C_156);
+    triangulo156.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo157(A_157, B_157, C_157);
+    triangulo157.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo158(A_158, B_158, C_158);
+    triangulo158.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo159(A_159, B_159, C_159);
+    triangulo159.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15A(A_15A, B_15A, C_15A);
+    triangulo15A.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15B(A_15B, B_15B, C_15B);
+    triangulo15B.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15C(A_15C, B_15C, C_15C);
+    triangulo15C.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15D(A_15D, B_15D, C_15D);
+    triangulo15D.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15E(A_15E, B_15E, C_15E);
+    triangulo15E.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo15F(A_15F, B_15F, C_15F);
+    triangulo15F.establecerColor(0.5, 0.3, 0.3);
+    
+    Triangulo triangulo160(A_160, B_160, C_160);
+    triangulo160.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo161(A_161, B_161, C_161);
+    triangulo161.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo162(A_162, B_162, C_162);
+    triangulo162.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo163(A_163, B_163, C_163);
+    triangulo163.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo164(A_164, B_164, C_164);
+    triangulo164.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo165(A_165, B_165, C_165);
+    triangulo165.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo166(A_166, B_166, C_166);
+    triangulo166.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo167(A_167, B_167, C_167);
+    triangulo167.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo168(A_168, B_168, C_168);
+    triangulo168.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo169(A_169, B_169, C_169);
+    triangulo169.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16A(A_16A, B_16A, C_16A);
+    triangulo16A.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16B(A_16B, B_16B, C_16B);
+    triangulo16B.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16C(A_16C, B_16C, C_16C);
+    triangulo16C.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16D(A_16D, B_16D, C_16D);
+    triangulo16D.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16E(A_16E, B_16E, C_16E);
+    triangulo16E.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo16F(A_16F, B_16F, C_16F);
+    triangulo16F.establecerColor(0.5, 0.3, 0.3);
 
+    Triangulo triangulo170(A_170, B_170, C_170);
+    triangulo170.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo171(A_171, B_171, C_171);
+    triangulo171.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo172(A_172, B_172, C_172);
+    triangulo172.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo173(A_173, B_173, C_173);
+    triangulo173.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo174(A_174, B_174, C_174);
+    triangulo174.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo175(A_175, B_175, C_175);
+    triangulo175.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo176(A_176, B_176, C_176);
+    triangulo176.establecerColor(0.5, 0.3, 0.3);
+    Triangulo triangulo177(A_177, B_177, C_177);
+    triangulo177.establecerColor(0.5, 0.3, 0.3);
+    
 
 
     escena.push_back(&triangulo6);
@@ -1103,6 +1346,68 @@ int main()
     escena.push_back(&triangulo9D);
     escena.push_back(&triangulo9E);
     escena.push_back(&triangulo9F);
+
+    //Parte de Daniel 150 - 177
+
+    escena.push_back(&triangulo150);
+    escena.push_back(&triangulo151);
+    escena.push_back(&triangulo152);
+    escena.push_back(&triangulo153);
+    escena.push_back(&triangulo154);
+    escena.push_back(&triangulo155);
+    escena.push_back(&triangulo156);
+    escena.push_back(&triangulo157);
+    escena.push_back(&triangulo158);
+    escena.push_back(&triangulo159);
+    escena.push_back(&triangulo15A);
+    escena.push_back(&triangulo15B);
+    escena.push_back(&triangulo15C);
+    escena.push_back(&triangulo15D);
+    escena.push_back(&triangulo15E);
+    escena.push_back(&triangulo15F);
+
+    escena.push_back(&triangulo160);
+    escena.push_back(&triangulo161);
+    escena.push_back(&triangulo162);
+    escena.push_back(&triangulo163);
+    escena.push_back(&triangulo164);
+    escena.push_back(&triangulo165);
+    escena.push_back(&triangulo166);
+    escena.push_back(&triangulo167);
+    escena.push_back(&triangulo168);
+    escena.push_back(&triangulo169);
+    escena.push_back(&triangulo16A);
+    escena.push_back(&triangulo16B);
+    escena.push_back(&triangulo16C);
+    escena.push_back(&triangulo16D);
+    escena.push_back(&triangulo16E);
+    escena.push_back(&triangulo16F);
+
+    escena.push_back(&triangulo150);
+    escena.push_back(&triangulo151);
+    escena.push_back(&triangulo152);
+    escena.push_back(&triangulo153);
+    escena.push_back(&triangulo154);
+    escena.push_back(&triangulo155);
+    escena.push_back(&triangulo156);
+    escena.push_back(&triangulo157);
+    escena.push_back(&triangulo158);
+    escena.push_back(&triangulo159);
+    escena.push_back(&triangulo15A);
+    escena.push_back(&triangulo15B);
+    escena.push_back(&triangulo15C);
+    escena.push_back(&triangulo15D);
+    escena.push_back(&triangulo15E);
+    escena.push_back(&triangulo15F);
+
+    escena.push_back(&triangulo170);
+    escena.push_back(&triangulo171);
+    escena.push_back(&triangulo172);
+    escena.push_back(&triangulo173);
+    escena.push_back(&triangulo174);
+    escena.push_back(&triangulo175);
+    escena.push_back(&triangulo176);
+    escena.push_back(&triangulo177);
 
     
 
